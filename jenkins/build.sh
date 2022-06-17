@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t darinpope/dp-alpine:latest .
+docker build -t rganeshsharma2489/docker-example:latest .
