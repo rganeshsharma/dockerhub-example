@@ -5,8 +5,6 @@ pipeline {
   }
   environment {
     DOCKERHUB_CREDENTIALS = credentials('dockerhubaccesstoken')
-    OCKERHUB_CREDENTIALS_USR = 'ganeshsharma2489'
-    DOCKERHUB_CREDENTIALS_PSW = 'cd3a3376-d598-4556-8698-6dbdea10da87'
   }
   stages {
     stage('Build') {
