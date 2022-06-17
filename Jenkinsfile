@@ -1,10 +1,10 @@
 pipeline {
-  agent { label 'linux' }
+  agent { label 'jenkins' }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
   environment {
-    DOCKERHUB_CREDENTIALS = credentials('darinpope-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('dockerhubaccesstoken')
   }
   stages {
     stage('Build') {
